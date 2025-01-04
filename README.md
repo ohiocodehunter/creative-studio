@@ -34,7 +34,7 @@ Ensure you have the following installed:
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/your-username/creative-studio-landing-page.git
+   git clone https://github.com/ohiocodehunter/creative-studio-landing-page.git
    ```
 
 2. **Navigate to the Project Directory**
