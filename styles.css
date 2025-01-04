@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(45deg, #8e44ad, #3498db);
+  color: white;
+  min-height: 100vh;
+}
+
+/* Navigation */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 1000;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  transform: scale(1.1);
+}
+
+/* Hero Section */
+#hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#hero-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.hero-content {
+  text-align: center;
+  z-index: 2;
+  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+/* Glass Card Style */
+.glass-card {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 15px;
+  margin: 1rem;
+}
+
+/* Sections */
+section {
+  /* Reduced min-height and padding */
+  min-height: 60vh;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Skills Section */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem; /* Reduced gap */
+  width: 100%;
+  max-width: 1200px;
+}
+
+.skill-card {
+  text-align: center;
+}
+
+/* Services Section */
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem; /* Reduced gap */
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* About Section specific */
+#about {
+  min-height: 60vh; /* Further reduced height for about section */
+  padding: 2rem; /* Reduced padding */
+  width: 85%;
+  height: auto;
+  margin: 0 auto;
+}
+br {
+  margin-bottom: 0.8rem;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem; /* Reduced gap */
+  width: 100%;
+  max-width: 500px;
+}
+
+input, textarea {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+button {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  background: white;
+  color: #8e44ad;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem; /* Reduced padding */
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+}
+a{
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Section spacing utilities */
+.section-spacing {
+  margin-bottom: 0.2rem; /* Added for consistent spacing between sections */
+}
+
+
+h3, h2 {
+  margin-bottom: 0.5rem;
+}
+p {
+  margin-left: 0.2rem;
+}
